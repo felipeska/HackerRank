@@ -12,6 +12,8 @@ package com.felipecb
  */
 fun serviceLane(n: Int, width: Array<Int>, cases: Array<Array<Int>>): Array<Int> {
   val result = mutableListOf<Int>()
+  val p = arrayOf(0,9,3,2)
+  p.sort()
   cases.forEach { case ->
     val start = case[0]
     val end = case[1] + 1
